@@ -1,0 +1,73 @@
+{
+  "blender": "4.5.15 LTS",
+  "result": "pass",
+  "source": {
+    "mesh_objects": 55,
+    "materials": [
+      "Display characters",
+      "Emergency red",
+      "Gasket and insulating polymer",
+      "Graphite powder coat",
+      "Nickel-plated hardware",
+      "Run indicator lens",
+      "Safety yellow",
+      "Satin blue-grey aluminium",
+      "Smoked display window",
+      "White silkscreen"
+    ],
+    "bounds_m": {
+      "min": [
+        -0.2025,
+        -0.1295,
+        0.0015
+      ],
+      "max": [
+        0.2025,
+        0.0695,
+        0.3215
+      ]
+    }
+  },
+  "glb_reimport": {
+    "mesh_objects": 55,
+    "materials": [
+      "Display characters",
+      "Emergency red",
+      "Gasket and insulating polymer",
+      "Graphite powder coat",
+      "Nickel-plated hardware",
+      "Run indicator lens",
+      "Safety yellow",
+      "Satin blue-grey aluminium",
+      "Smoked display window",
+      "White silkscreen"
+    ],
+    "bounds_m": {
+      "min": [
+        -0.2025,
+        -0.1295,
+        0.0015
+      ],
+      "max": [
+        0.2025,
+        0.0695,
+        0.3215
+      ]
+    }
+  },
+  "packed_source_maps_px": {
+    "coating-base-color.png": [
+      4096,
+      4096
+    ],
+    "coating-metallic.png": [
+      4096,
+      4096
+    ],
+    "coating-roughness.png": [
+      4096,
+      4096
+    ]
+  },
+  "embedded_glb_images": 2
+}
