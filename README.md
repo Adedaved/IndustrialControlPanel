@@ -14,6 +14,10 @@ A 3D control station designed for a fictional data centre rack. The assembly inc
 - Import [CP-04.glb](assets/CP-04.glb) into a glTF 2.0 viewer or engine. The GLB includes the panel assembly and embeds its textures. The studio cameras, floor, and lights are in the Blender file.
 - The [texture files](textures/) include 4096 × 4096 base colour, roughness, and metallic PNGs for the powder-coated enclosure. The metallic map is black because the coating is dielectric. The other materials use Principled BSDF values. There is no baked normal map.
 
+## Unreal Engine integration
+
+Adekunle Olowu integrated the CP-04 panel into [Unreal Equipment Room](https://github.com/Adedaved/UnrealEquipmentRoom), the companion Unreal Engine project.
+
 ## Rebuild and verify
 
 Run these commands from the repo root with Blender 4.5 on your PATH. The first command recreates the model, textures, GLB, and evidence images. The second reopens the Blender file and reimports the GLB.
@@ -23,6 +27,6 @@ blender -b --python-exit-code 1 --python tools/build_panel.py -- --output .
 blender -b --python-exit-code 1 --python tools/verify_export.py -- --root .
 ```
 
-[Example verification output](reports/export-verification.json) shows the Blender round-trip results, including mesh count, material names, packed image resolution, and world-space bounds. The test checks dimensions to 0.1 mm. Engine integration is pending.
+[Example verification output](reports/export-verification.json) shows the Blender round-trip results, including mesh count, material names, packed image resolution, and world-space bounds. The test checks dimensions to 0.1 mm.
 
 The wireframe is a Blender render of the evaluated geometry. The UV diagrams are drawn directly from the editable base-mesh UV data.
